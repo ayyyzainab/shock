@@ -1,5 +1,14 @@
 body {
-    font-size: 28px;
+    font-size: 25px;
+    background-color: black;
+}
+
+.frontpage {
+  background-image: url("homebackground.png");
+  background-size: 1500px 700px;
+  width: 1250px;
+  height: 650px;
+  float: center;
 }
 
 ul {
@@ -7,7 +16,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #B3E5BA;
     position: sticky;
     top: 0;
 }
@@ -20,51 +28,52 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 30px 35px;
     text-decoration: none;
-    font-family: 'Play', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 li a:hover {
-    background-color: #79B281;
+
+    color: #0812B2;
+    text-decoration: bold;
 }
 
 .logo {
-  align: left;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  background-color: #B3E5BA;
-  position: sticky;
-  top: 0;
+  position: absolute;
+  padding: 20px 25px;
 }
 
-.watch {
-  position:absolute;
-  left:30%;
-  top:30%;
-  margin:-75px 0 0 -135px;
+.arrow {
+  display:table-cell;
+  vertical-align: sub;
+  text-align:center;
+  float: center;
 }
 
-.case {
-  position:absolute;
-  left:50%;
-  top:50%;
-  margin:-75px 0 0 -135px;
+.productpage {
+  background-image: url("productbackground.png");
+  width: 1250px;
+  height: 650px;
+  float: center;
 }
 
-div {
+
+
+
+.title {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Play', sans-serif;
-  position:absolute;
-  left:40%;
-  top:75%;
-  margin:-75px 0 0 -135px;
-  overflow: hidden;
-  background-color: #B3E5BA;
+  font-family: 'Open Sans', sans-serif;
+  top: 75%;
+  left: 50%;
+  transition: transform .1s;
+  font-size: 50px;
+}
 
+.title:hover {
+  transform: scale(1.3);
 }
